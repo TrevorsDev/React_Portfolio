@@ -56,7 +56,7 @@ export default function Contact() {
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
 
-          {emailValid && <div className="text-red-500">{emailValid}</div>}
+          {emailValid && <div className="text-danger">{emailValid}</div>}
           <Form.Label>Email address</Form.Label>
           <Form.Control name="email" onBlur={handleValidation} value={email} onChange={handleInputChange} type="email" placeholder="name@example.com" />
         </Form.Group>
@@ -66,7 +66,7 @@ export default function Contact() {
         </Form.Group>
         {userMessage && (
           <div className="error">
-            <p className={userMessage === "Email sent!" ? "text-green-500" : "text-red-500"}>{userMessage}</p>
+            <p className={userMessage === "Email sent!" ? "text-success" : "text-danger"}>{userMessage}</p>
           </div>
         )}
         <Button onClick={handleFormSubmit} disabled={!(email && name && message && !emailValid && !userMessage)} variant="primary" type="submit">
