@@ -1,19 +1,49 @@
+import Project from '../components/Projects'
 export default function Portfolio() {
+  const projects = [{
+    name: 'surfReport',
+    description: 'MERN Stack',
+    link: "https://github.com",
+    repo: "https://github.com",
+    image: "Photo"
+  },
+  {
+    name: 'pastelPuzzels',
+    description: 'MERN Stack',
+    link: "https://github.com",
+    repo: "https://github.com",
+    image: "Photo"
+  },
+  {
+    name: 'runBuddy',
+    description: 'HTML/CSS',
+    link: "https://github.com",
+    repo: "https://github.com",
+    image: "Photo"
+  },
+  {
+    name: 'ledWall',
+    description: 'Node/IoT',
+    link: "https://github.com",
+    repo: "https://github.com",
+    image: "Photo"
+  },
+  {
+    //This is the name of the project
+    name: 'calculator',
+    //This line describes the stack/the tech we use
+    description: 'React/JavaScript/CSS',
+    link: "https://github.com",
+    repo: "https://github.com",
+    image: "Photo"
+  },]
   return (
     <div>
-      <h1>Portfolio Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+      <div className="d-flex">
+        {projects.map((project) => (
+          <Project project={project} key={"project-" + project.name} />
+        ))}
+      </div>
     </div>
   );
 }
