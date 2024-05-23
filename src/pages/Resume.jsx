@@ -16,12 +16,12 @@ export default function Resume() {
     fetch(PDF).then((response) => {
       response.blob().then((blob) => {
         const fileURL = URL.createObjectURL(blob);
-         open(fileURL, '_blank')  //alternative to the a link opens embedded adobe viewer
+        open(fileURL, '_blank')  //alternative to the a link opens embedded adobe viewer
         let alink = document.createElement("a");
         //the line below pops up a separate download window
         // alink.href = fileURL;
         alink.download = "Trevors_Resume.pdf";
-        alink.click(); 
+        alink.click();
       });
     });
   };
@@ -40,7 +40,7 @@ export default function Resume() {
           <a href="#image" onClick={handleClick} className="underline">
             resume
           </a>{" "}
-          as an image. 
+          as an image.
         </h6>
         Click here to download my{" "}
         <a href="#download" onClick={handleDownload} className="underline">

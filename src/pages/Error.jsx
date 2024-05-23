@@ -1,3 +1,5 @@
+// This page is helpful when in development so that its able to display what errors are happening at any given time. It then turns into a 404 page when were finished writng the project
+
 import { useRouteError } from 'react-router-dom';
 
 export default function ErrorPage() {
