@@ -1,4 +1,7 @@
 # Personal Portfolio using React
+
+LINK TO DEPLOYED APPLICATION: https://steady-entremet-dfee02.netlify.app/
+
  ![Github license](https://img.shields.io/badge/license-mit-blue.svg)
 
 ## Discription
@@ -16,6 +19,11 @@ There are no steps to deploy this project. If you wish to view my portfolio proj
 
 ## App Usage
 My portfolio project was made to be easy and intuitive to navigate. By viewing the deployed link to my portfolio, I hope to convey that experience to the user.
+
+To download my resume, please click the link in blue shown in this picture as "resume as a pdf": 
+
+<br>
+<img src="./src/assets/img/portfolioResumeDownloadLink.png" alt="Depiction of resume download" width="400" height="400">
 
 ## License
 this project is licensed under the mit.
